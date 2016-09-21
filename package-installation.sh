@@ -1,5 +1,8 @@
 #!/bin/bash
 
+#--------- git -----------#
+apt-get install git
+
 #---------- vim ----------#
 cd ~
 apt-get install vim
@@ -23,5 +26,24 @@ make
 make install
 git clone https://github.com/syl20bnr/spacemacs ~/.emacs.d
 
-#--------- git -----------#
-apt-get install git
+#--------- google chrome -----------#
+cd /tmp
+wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
+sudo dpkg -i google-chrome-stable_current_amd64.deb
+sudo apt-get -f install
+cd ~
+
+
+#--------- latest version of R -----------#
+sudo sh -c 'echo "deb http://cran.rstudio.com/bin/linux/ubuntu trusty/" >> /etc/apt/sources.list'
+gpg --keyserver keyserver.ubuntu.com --recv-key E084DAB9
+gpg -a --export E084DAB9 | sudo apt-key add -
+sudo apt-get update
+sudo apt-get install r-base
+
+#--------- latest version of qgis -----------#
+sudo sh -c 'echo "deb http://qgis.org/debian trusty main" >> /etc/apt/sources.list'
+sudo sh -c 'echo "deb-src http://qgis.org/debian trusty main" >> /etc/apt/sources.list'
+sudo apt-key adv --keyserver keyserver.ubuntu.com --recv-key 3FF5FFCAD71472C4
+sudo apt-get update
+sudo apt-get install -y qgis python-qgis qgis-plugin-grass
