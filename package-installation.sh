@@ -24,7 +24,7 @@ tar -xf emacs-24.4.tar.* && cd emacs-24.4
 ./configure
 make
 make install
-git clone https://github.com/syl20bnr/spacemacs ~/.emacs.d
+git clone -b develop https://github.com/syl20bnr/spacemacs ~/.emacs.d
 
 #--------- google chrome -----------#
 cd /tmp
