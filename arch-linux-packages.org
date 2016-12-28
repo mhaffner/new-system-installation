@@ -1,0 +1,11 @@
+* pacman
+aspell-en #english dictionary
+emacs
+tk # required to install r packages from console
+elasticsearch
+git
+vim
+* yaourt
+qgis
+mendeleydesktop
+
