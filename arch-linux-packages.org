@@ -1,10 +1,12 @@
 * pacman
 aspell-en #english dictionary
 emacs
+r
 tk # required to install r packages from console
 elasticsearch
 git
 vim
+notmuch # mail client/indexer that works with emacs
 * yaourt
 qgis
 mendeleydesktop
