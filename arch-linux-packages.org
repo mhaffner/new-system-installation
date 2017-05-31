@@ -2,11 +2,14 @@
 aspell-en #english dictionary
 emacs
 r
-tk # required to install r packages from console
+tk # required to install r packages from r shell
 elasticsearch
 git
 vim
+offlineimap # for email
 notmuch # mail client/indexer that works with emacs
+autoconf-archive # for mu4e
+syncthing
 * yaourt
 qgis
 mendeleydesktop
